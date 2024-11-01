@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio - Projetos</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <button class="navbar-toggle" onclick="toggleNavbar()">☰</button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projetos.html">Projetos</a></li>
+    <li><a href="sobre.html">Sobre Mim</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+</div>
+
+<div class="container">
+  <h2>Meus Projetos</h2>
+
+  <div>
+    <img src="./img/logotigre.png" alt="Imagem Contato" width="200">
+  </div>
+
+  <p>Aqui você encontra alguns dos projetos mais recentes que desenvolvi. Cada um deles representa uma parte da minha jornada de aprendizado e inovação.</p>
+  <div>
+    <a href="./projetos/tema_livreteams/html/HOME.html" target="_blank" class="project-item">
+      <img src="./img/console.png" alt="Projeto 1" width="200">
+    </a>
+    <a href="./projetos/projeto_musica/home.html" target="_blank" class="project-item">
+      <img src="./img/playlist.png" alt="Projeto 2" width="200">
+    </a>
+    <a href="./projetos/cardapio_produto/indexHOME.html" target="_blank" class="project-item">
+      <img src="./img/szstyle.png" alt="Projeto 3" width="200">
+    </a>
+    <a href="./projetos/pousada/html/index.html" target="_blank" class="project-item">
+      <img src="./img/pousada.png" alt="Projeto 4" width="200">
+    </a>
+    <a href="./projetos/curriculum/index.html" target="_blank" class="project-item">
+      <img src="./img/curriculo.png" alt="Projeto 5" width="200">
+    </a>
+  </div>
+</div>
+
+<footer>
+  <p>© 2024 Meu Portfólio</p>
+</footer>
+
+<script>
+function toggleNavbar() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('open');
+  const links = document.querySelectorAll('.navbar ul li a');
+  links.forEach(link => {
+    link.style.opacity = navbar.classList.contains('open') ? '1' : '0';
+  });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio - Contato</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <button class="navbar-toggle" onclick="toggleNavbar()">☰</button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projetos.html">Projetos</a></li>
+    <li><a href="sobre.html">Sobre Mim</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+</div>
+
+<div class="container">
+  <h2>Contato</h2>
+
+  <div>
+    <img src="./img/logotigre.png" alt="Imagem Contato" width="200">
+  </div>
+
+  <p>Se deseja entrar em contato comigo, utilize as opções abaixo. Seja para projetos, consultas ou colaborações, estou sempre disposto a discutir novas ideias e desafios.</p>
+  
+  <h3>Parcerias</h3>
+  <p>Estou aberto a parcerias com outras empresas e profissionais que compartilhem uma visão de inovação e excelência. Acredito que boas colaborações podem gerar resultados impactantes e duradouros. Se você está interessado em trabalhar junto em algum projeto ou em estabelecer uma parceria estratégica, ficarei feliz em conversar.</p>
+  
+  <h3>Links de Contato</h3>
+  <ul>
+    <li><a href="mailto:godzica583@gmail.com">Email</a></li>
+    <li><a href="x" target="_blank">LinkedIn</a></li>
+    <li><a href="PepeX-glicht" target="_blank">GitHub</a></li>
+  </ul>
+</div>
+
+<footer>
+  <p>© 2024 Meu Portfólio</p>
+</footer>
+
+<script>
+function toggleNavbar() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('open');
+  const links = document.querySelectorAll('.navbar ul li a');
+  links.forEach(link => {
+    link.style.opacity = navbar.classList.contains('open') ? '1' : '0';
+  });
+}
+</script>
+
+</body>
+</html>
