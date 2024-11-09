@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/fundo45.avif');
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed; 
+    font-family: prata;
+    background-color: #f5f5f5;
+    color: #ffffff;
+}
+
+.navbar {
+    background-color: black;
+    color: gold;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    height: 80px;
+    padding-top: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.navbar a:hover {
+    color: gold;
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#produtos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+#produtos th, #produtos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#produtos img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+#produtos img:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.produto-descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.imagem-produto img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.descricao-produto {
+    max-width: 600px;
+}
